@@ -14,19 +14,31 @@
         <h2 class="ge">Generate a</h2>
         <h2 class="st">Strong password</h2>
         <p>Don't worry about hackers again, get a strong password now</p>
-        <button onclick="generate_passwords()">Generate password</button>
-            <hr>
+
+
+        <hr>
+
         <div class="inputs">
+
+           <div class="box">
+                <p class="length">length:</p>
+
+                <input type="number" class="charlength">
             
-            <button class="btn1" id="inp" ></button>
-            <button class="btn2" id="inp" ></button>
+            
+                <button class="btn1" id="inp"></button>
+                <button class="btn2" id="inp"></button>
+            </div>
+
+
+            <button onclick="generate_passwords()" class="btn">Generate password</button>
         </div>
-        
+
 
     </div>
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

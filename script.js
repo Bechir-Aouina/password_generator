@@ -11,9 +11,13 @@ const characters = [
 
 const inp1 = document.querySelector(".btn1");
 const inp2 = document.querySelector(".btn2");
+const char=document.querySelector(".charlength");
+
 function getRandomPass1() {
+    let charlength=Number(char.value)
+    console.log(typeof(charlength))
     let pass1 = ""
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < charlength; i++) {
 
         let index = Math.floor(Math.random() * characters.length)
         pass1 += characters[index];
@@ -23,8 +27,8 @@ function getRandomPass1() {
 }
 function getRandomPass2() {
     let pass2 = " "
-
-    for (let i = 0; i < 15; i++) {
+    let charlength=Number(char.value)
+    for (let i = 0; i < charlength; i++) {
 
         let index = Math.floor(Math.random() * characters.length)
         pass2 += characters[index];
@@ -53,10 +57,7 @@ function generate_passwords() {
             inp1.textContent=pass1;
             check=false
         }
-        else{
-            inp2.textContent=pass2;
-            check=true;
-        }
+       
     })
 
 
