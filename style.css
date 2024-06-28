@@ -22,7 +22,7 @@ body {
     height: 300px;
     padding: 100px;
     background-color: #ECFDF5;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;

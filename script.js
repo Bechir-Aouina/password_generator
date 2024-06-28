@@ -57,7 +57,9 @@ function generate_passwords() {
             inp1.textContent=pass1;
             check=false
         }
-       
+       else{
+            check=true;
+       }
     })
 
 
