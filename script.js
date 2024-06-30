@@ -12,7 +12,7 @@ const characters = [
 const inp1 = document.querySelector(".btn1");
 const inp2 = document.querySelector(".btn2");
 const char=document.querySelector(".charlength");
-
+const togglebtn=document.querySelector(".toggle");
 function getRandomPass1() {
     let charlength=Number(char.value)
     console.log(typeof(charlength))
@@ -61,12 +61,12 @@ function generate_passwords() {
             check=true;
        }
     })
-
-
-
-
-
 }
+togglebtn.addEventListener('click',()=>{
+document.body.classList.toggle("dark");
+
+
+})
 
 
 

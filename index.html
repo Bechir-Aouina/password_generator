@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password_generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-
+   
     <div class="container">
+       <button class="toggle"><i class="fa-regular fa-moon fa-xl"></i></button> 
+      
         <h2 class="ge">Generate a</h2>
         <h2 class="st">Strong password</h2>
+       
         <p>Don't worry about hackers again, get a strong password now</p>
-
+        
 
         <hr>
 
         <div class="inputs">
 
-           <div class="box">
+            <div class="box">
                 <p class="length">length:</p>
 
                 <input type="number" class="charlength">
             
-            
+                
                 <button class="btn1" id="inp"></button>
                 <button class="btn2" id="inp"></button>
+                
             </div>
 
 
             <button onclick="generate_passwords()" class="btn">Generate password</button>
+            
         </div>
 
 
